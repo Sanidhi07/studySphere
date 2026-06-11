@@ -12,7 +12,6 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Navigate to="/login" />} />
         <Route path="/login" element={<LoginPage />} />
         <Route path="/register" element={<RegisterPage />} />
         <Route path="/dashboard" element={<DashboardPage />} />
@@ -21,11 +20,11 @@ function App() {
         <Route path="/tasks" element={<TasksPage />} />
         <Route path="/profile" element={<ProfilePage />} />
       </Routes>
-      <div className="min-h-screen flex items-center justify-center">
+      {/* <div className="min-h-screen flex items-center justify-center">
       <h1 className="text-5xl font-bold text-indigo-600">
         StudySphere 🚀
       </h1>
-    </div>
+    </div> */}
     </BrowserRouter>
     
   );
