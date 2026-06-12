@@ -1,14 +1,15 @@
 import {Link} from "react-router-dom";
 
 interface SubjectCardProps {
+  id:number;
   name: string;
   description: string;
   topicCount: number;
   icon:string;
 }
-function SubjectCard({ name, description, topicCount, icon }: SubjectCardProps){
+function SubjectCard({ id, name, description, topicCount, icon }: SubjectCardProps){
   return(
-    <Link to="/topics">
+    <Link to={`/subjects/${id}/topics`}>
       <div className="bg-white rounded-2xl border border-gray-200 shadow-sm p-6 hover:shadow-md transition-shadow cursor-pointer">
         <div className="text-3xl mb-3">{icon}</div>
         <h3 className="text-lg font-semibold">{name}</h3>

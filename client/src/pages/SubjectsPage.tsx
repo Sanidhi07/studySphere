@@ -6,7 +6,7 @@ function SubjectsPage(){
         <DashboardLayout>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                {subjects.map((subject)=>(
-                    <SubjectCard key={subject.id} name={subject.name} description={subject.description} topicCount={subject.topicCount} icon={subject.icon} />
+                    <SubjectCard id={subject.id} key={subject.id}  name={subject.name} description={subject.description} topicCount={subject.topicCount} icon={subject.icon} />
                ))}
                 
             </div>

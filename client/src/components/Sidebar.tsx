@@ -11,8 +11,6 @@ function Sidebar() {
           <ul className="space-y-4">
             <li><NavLink to="/dashboard" className={({ isActive }) =>  `flex items-center gap-3 rounded-lg px-4 py-3 transition-colors ${isActive? "bg-indigo-100 text-indigo-600 font-semibold": "hover:bg-indigo-100"}`}><FaHome/>Dashboard</NavLink></li>
             <li><NavLink to="/subjects" className={({ isActive }) =>  `flex items-center gap-3 rounded-lg px-4 py-3 transition-colors ${isActive? "bg-indigo-100 text-indigo-600 font-semibold": "hover:bg-indigo-100"}`}><FaBook/>Subjects</NavLink></li>
-            <li><NavLink to="/topics" className={({ isActive }) =>  `flex items-center gap-3 rounded-lg px-4 py-3 transition-colors ${isActive? "bg-indigo-100 text-indigo-600 font-semibold": "hover:bg-indigo-100"}`}><FaLayerGroup/>Topics</NavLink></li>
-            <li><NavLink to="/tasks" className={({ isActive }) =>  `flex items-center gap-3 rounded-lg px-4 py-3 transition-colors ${isActive? "bg-indigo-100 text-indigo-600 font-semibold": "hover:bg-indigo-100"}`}><FaCheckSquare/>Tasks</NavLink></li>
             <li><NavLink to="/profile" className={({ isActive }) =>  `flex items-center gap-3 rounded-lg px-4 py-3 transition-colors ${isActive? "bg-indigo-100 text-indigo-600 font-semibold": "hover:bg-indigo-100"}`}><FaUser/>Profile</NavLink></li>
           </ul>
         </nav>
