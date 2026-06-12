@@ -1,5 +1,5 @@
 import { NavLink } from "react-router-dom";
-import {FaHome,FaBook,FaLayerGroup,FaCheckSquare,FaUser,FaSignOutAlt} from "react-icons/fa";
+import {FaHome,FaBook,FaUser,FaSignOutAlt} from "react-icons/fa";
 function Sidebar() {  
     return (
       <aside className="w-64 min-h-screen bg-white border-r border-gray-200 p-6 flex flex-col">
