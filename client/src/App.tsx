@@ -17,7 +17,7 @@ function App() {
         <Route path="/dashboard" element={<DashboardPage />} />
         <Route path="/subjects" element={<SubjectsPage />} />
         <Route path="/subjects/:subjectId/topics" element={<TopicsPage />} />
-        <Route path="/tasks" element={<TasksPage />} />
+        <Route path="/topics/:topicId/tasks" element={<TasksPage />} />
         <Route path="/profile" element={<ProfilePage />} />
       </Routes>
       {/* <div className="min-h-screen flex items-center justify-center">

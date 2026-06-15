@@ -16,6 +16,7 @@ function TopicsPage(){
                 {filteredTopics.map((topic) => (
                     <TopicCard 
                         key={topic.id} 
+                        id={topic.id}
                         name={topic.name} 
                         description={topic.description} 
                     />
