@@ -1,42 +1,37 @@
 
+import { topics } from "../data/topicsData";
+import { tasks } from "../data/taskData";
+import { subjects } from "../data/subjectsData";
 
-export const dashboardStats=[
-  {
+    const totalSubjects=subjects.length;
+    const totalTopics=topics.length;
+    const completedTasks=tasks.filter((task)=>task.completed).length;
+    const pendingTasks=tasks.filter((task)=>!task.completed).length;
+    export const dashboardStats=[
+    {
     title:"Subjects",
-    value:5,
+    value:totalSubjects,
     icon:"📚",
     color:"bg-blue-100"
-  },
-  {
+    },
+    {
     title:"Topics",
-    value:18,
+    value:totalTopics,
     icon:"📝",
     color:"bg-green-100"
-  },
-  {
+    },
+    {
     title:"Tasks",
-    value:42,
+    value:completedTasks,
     icon:"✅",
     color:"bg-yellow-100"
-  },
-  {
-    title:"Due Soon",
-    value:3,
+    },
+    {
+    title:"Pending Tasks",
+    value:pendingTasks,
     icon:"⏰",
     color:"bg-red-100"
-  },
-]
-export const recentTasks = [
- {
-  title:"Complete IELTS Writing Task 1",
-  completed:false,
- },
- {
-  title:"Solve 5 Array Questions",
-  completed:true,
- },
- {
-  title:"Read Trading Chapter 3",
-  completed:false,
- }
-];
+    },
+  ]
+
+export const recentTasks = tasks.slice(0,3);
