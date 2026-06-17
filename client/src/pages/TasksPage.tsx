@@ -41,10 +41,11 @@ function TasksPage(){
            
            </div>
            <div className="space-y-4">
-            {
+            {   filteredTasks.length > 0 ? (
                 filteredTasks.map((task)=>(
                     <TaskCard key={task.id} title={task.title} completed={task.completed}/>
                 ))
+            ) : (<div className="bg-white rounded-xl border border-gray-200 p-6 text-center text-gray-500">No tasks available for this topic</div>)
             }
            </div>
         </DashboardLayout>
